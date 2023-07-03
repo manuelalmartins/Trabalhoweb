@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SENAC</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header class = "cabecalho">
+        <img  class = "logo-cabecalho" src="logo.svg" alt="Logo técna">
+        <nav class="cabecalho-menu">
+            <a class = "item-menu" href="sobrenos"> Sobre nós</a>
+            <a class = "item-menu" href="recursos"> Recursos</a>
+            <a class = "item-menu" href=""> Experiências</a>
+            <a class = "item-menu" href=""> Atendimentos</a>
+            <a class = "item-menu" href="planos"> Planos</a>
+            <button class = "botao-cabecalho"> Cadastre-se</button>
+        </nav>
+
+    </header>
+
+    <main class = "conteudo">
+        <section class = "conteudo-principal">
+            <div class = "conteudo-principal-escrito">
+            <h1 class = "conteudo-principal-titulo" id="sobrenos">Help Desk e Atendiento</h1>
+            <h2 class = "conteudo-principal-subtitulo"> A Técna é uma plataforma online que permite que sua empresa organize os chamados de suporte (help desk) e atendimento online com seus clientes em apenas um lugar..</h2>
+            <button class = "botao">Saiba Mais!</button>
+            </div>
+            <img class = "imagem-principal" src="menuimg.svg" alt="">
+        </section>
+        <section class = "conteudo2">
+            <h3 class = "conteudo-principal-titulo2" id="recursos">Nossos Recursos: </h3>
+            <p class = "conteudo-paragrafo">
+                <li class="recursos">Abertura de solicitações por email</li>
+                <li class="recursos">Alertas (Email, Pushover, Telegram, etc)</li>
+                <li class="recursos">API </li>
+                <li class="recursos">Campos Personalizados</li>
+                <li class="recursos">Comunicação Automática</li>
+                <li class="recursos">Controle de horas trabalhadas</li>
+                <li class="recursos">Controle de SLA</li>
+                <li class="recursos">Controle de solicitações e incidentes</li>
+                <li class="recursos">Dashboard</li>
+                <li class="recursos">Integração com Active Directory, Open LDAP, Pop e Imap</li>
+                <li class="recursos">Integração via Formulário</li>
+
+        </section>
+
+    </main>
+    <div class="container">
+        <h2 id="planos">Escolha Seu Plano:</h2>
+        <div class="precos">
+        <div class="preco2">
+           <p>Free</p>
+            <h3>Gratuito<span></span></h3>
+                <ul>
+                    <li>1 atendente.</li>
+                    <li>5 usuários.</li>
+                    <li>1 Departamento.</li>
+                    <li>Chamados 100/mês.</li>
+                    <li>Exportação dos dados.</li>
+                    <li>Controle de solicitações e incidentes.</li>
+                    <li>X</li>
+                    <li>X</li>
+                    <li>X</li>
+                    <li>X</li>
+                    <li>X</li>
+                    <li>X</li>
+                    <li>X</li>
+                    <li>X</li>
+                    <li>X</li>
+                </ul>   
+                <button>Resgatar Acesso!</button>       
+            </div>
+            <div class="preco2">
+                <p>Iniciante</p>
+                 <h3>R$25,00<span>/Mês</span></h3>
+                     <ul>
+                         <li>5 Atendentes..</li>
+                         <li>100 usuários.</li>
+                         <li>30 DepartamentoS.</li>
+                         <li>Chamados ilimitados.</li>
+                         <li>Exportação dos dados.</li>
+                         <li>Controle de solicitações e incidentes.</li>
+                         <li>Alertas (Email, Pushover, Telegram, etc).</li>
+                         <li>Base de conhecimento.</li>
+                         <li>Campos Personalizados</li>
+                         <li>Controle de horas trabalhadas</li>
+                         <li>Controle de SLA</li>
+                         <li>Dashboard</li>
+                         <li>Multi-Idioma</li>
+                         <li>Avaliação do Atendimento</li>
+                         <li>Relatórios</li>
+                     <button>COMPRE!</button>     
+                 </div>
+                 <div class="preco2">
+                    <p>Iniciante</p>
+                     <h3>R$20,00<span>/Mês</span></h3>
+                         <ul>
+                            <li>100 Atendentes..</li>
+                            <li>500 usuários.</li>
+                            <li>200 DepartamentoS.</li>
+                            <li>Chamados ilimitados.</li>
+                            <li>Exportação dos dados.</li>
+                            <li>Controle de solicitações e incidentes.</li>
+                            <li>Abertura de solicitações por email.</li>
+                            <li>Alertas (Email, Pushover, Telegram, etc).</li>
+                            <li>API</li>
+                            <li>Base de conhecimento.</li>
+                            <li>Campos Personalizados</li>
+                            <li>Controle de horas trabalhadas</li>
+                            <li>Controle de SLA</li>
+                            <li>Dashboard</li>
+                            <li>Integração com Active Directory, Open LDAP, Pop e Imap.</li>
+                            <li>Multi-Idioma</li>
+                            <li>Avaliação do Atendimento</li>
+                            <li>Relatórios</li>
+                         <button>COMPRE!</button>        
+                     </div>
+        </div>
+    <!-- Formulário de Contato -->
+    <div class="contatenos">
+        <h2>Entre em contato conosco</h2>
+        <form class="form-contato" action="enviar.php" method="POST">
+            <label class="campo" for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label class="campo" for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label class="campo" for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    <footer class = "rodape">
+        <h4 class="rodape1">© Todos os Direitos Reservados.</h4> 
+            <h4 class="rodape1"> 2023 Técna </h4>
+        <img class = "logo-rodape"src="logo.svg" alt="">
+
+    </footer>
+</body>
+</html>
